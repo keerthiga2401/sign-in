@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo-small.png">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <title>Halleyx | Signin page </title>
+    <style>
+    
+        @media (min-width:320px) and (max-width: 480px) {
+            .home-page {
+                height: 100%;
+                width: 100%;
+                overflow-x: hidden
+            }
+
+
+            .home-page .gradient-circle-1 {
+                width: 50%;
+                height: 50%;
+                background: rgba(82, 189, 170, .102);
+                position: absolute;
+                box-shadow: 0 0 200px 200px rgba(82, 189, 170, .102);
+                border-radius: 100%;
+                top: -10rem;
+                z-index: -1
+            }
+
+            .home-page .gradient-circle-2 {
+                top: 20vh
+            }
+
+            .home-page .gradient-circle-2 {
+                width: 50%;
+                height: 50%;
+                background: rgba(82, 189, 170, .102);
+                position: absolute;
+                box-shadow: 0 0 200px 200px rgba(82, 189, 170, .102);
+                border-radius: 100%;
+                right: 0;
+                z-index: -1
+            }
+            body {
+            font-family: 'Open Sans';
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+
+            margin: 0 auto;
+            /* padding: 20px; */
+        }
+
+        h1 {
+            position: absolute;
+            top: 25%;
+            left: 18%;
+            width: 350px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Quicksand';
+        }
+        .signup{
+            font-size: 14px;
+            font-family: 'Open Sans';
+            position: absolute;
+            bottom: 15%;
+            left: 56%;
+            width: 350px;
+            transform: translate(-50%, -50%);
+        }
+        .signup a{  color: #54bd95;
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            color: #265e4b;
+        }
+        .overall {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 350px;
+            transform: translate(-50%, -50%);
+        }
+
+        .image {
+            width: 188px;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        .form-group {
+            margin: 21px;
+            position: relative;
+
+            input[type="text"] {
+                font: 15px/24px;
+                color: #333;
+                width: 80%;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+            }
+        }
+
+        .inputbox {
+            border-radius: 5px;
+            min-height: 2em;
+            width: 95%;
+            border: 1px solid #ccc;
+            padding: 5px 4px 5px 10px;
+            transition: 0.4s;
+        }
+
+        .inputbox:hover {
+            border: 1px solid #54bd95 !important;
+        }
+
+        .inputbox:active {
+            border: 1px solid #54bd95 !important;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-family: 'Open Sans';
+            margin-bottom: 5px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            font-family: 'Open Sans';
+            background-color: #54bd95;
+            box-sizing: border-box;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            height: 46px;
+            font-size: 15px;
+            line-height: 18.15px;
+            letter-spacing: .005em;
+            cursor: pointer
+        }
+
+        .button:hover {
+            background-color: #265e4b;
+        }
+
+        .forgot-password {
+            text-align: right;
+            font-size: 14px;
+            margin: 10px 0 20px 0;
+        }
+
+        .forgot-password a {
+            color: #54bd95;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            color: #265e4b;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="home-page">
+        <div class="gradient-circle-1"></div>
+        <div class="gradient-circle-2"></div>
+        <div class="container">
+            <img class="image" src="./logo-line-black-small.png" alt="halleyx logo">
+            <h1>Sign in</h1>
+            <form>
+                <div class="overall">
+                    <div class="form-group">
+                        <label for="email">Work email</label>
+                        <input type="email" class="inputbox" id="email" placeholder="john@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="inputbox" id="password" placeholder="Password" required>
+                        <div class="forgot-password">
+                            <a href="#">Forgot Password ?</a>
+                        </div>
+                        <input type="submit" value="Sign in" class="button">
+                    </div>
+                    </div>
+            </form>
+            <div class="signup">
+            <p>Don't have an account yet?</p>
+            <a href="#"> Sign up</a>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
